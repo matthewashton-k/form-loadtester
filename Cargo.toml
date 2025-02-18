@@ -1,0 +1,15 @@
+[package]
+name = "form_loadtester"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.39"
+clap = { version = "4.5.28", features = ["derive"] }
+csv = "1.3.1"
+ctrlc = "3.4.5"
+nom = "8.0.0"
+rand = "0.9.0"
+reqwest = { version = "0.12.12", features = ["multipart"] }
+scraper = "0.22.0"
+tokio = { version = "1.43.0", features = ["full"] }
