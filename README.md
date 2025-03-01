@@ -9,44 +9,45 @@ I created this to test out a custom http server and multipart form field parser 
 
 ## Configuration Language
 To fuzz a form you must supply a configuration file that specifies the entries and methods used to create paramaters for that multipart form. <br>
-Available commands:
 
-For static parameters
+#### Available commands
+
+For static parameters:
 ```
 static_str(name,val)
 ```
 
-Randomly generated email with a specified set of domains
+Randomly generated email with a specified set of domains:
 ```
 email(name,domains: arr)
 ```
 
-Set of key value pairs, of which a random subset is chosen to be included in the multipart form.
+Set of key value pairs, of which a random subset is chosen to be included in the multipart form:
 ```
 choose_any(kvps: arr<(k,v)>)
 ```
 
-Set of key value pairs, of which a random subset of size n is chosen to be included in the multipart form.
+Set of key value pairs, of which a random subset of size n is chosen to be included in the multipart form:
 ```
 choose_n(n: usize,kvps: arr<(k,v)>)
 ```
 
-Randomly generated cellphone
+Randomly generated cellphone:
 ```
 cellphone(name)
 ```
 
-Randomly Generated Date between year min and year max
+Randomly Generated Date between year min and year max:
 ```
 date(name,min,max)
 ```
 
-Randomly generated string with a maximum length.
+Randomly generated string with a maximum length:
 ```
 string(name,maxlen)
 ```
 
-Randomly generated string that has a first last section separated by whitespace.
+Randomly generated string that has a first last section separated by whitespace:
 ```
 name(name,maxlen)
 ```
