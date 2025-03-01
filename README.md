@@ -8,7 +8,7 @@ I created this to test out a custom http server and multipart form field parser 
 3. Configurable concurrency level.
 
 ## Configuration Language
-To fuzz a form you must supply a configuration file that specifies the entries and methods used to create paramaters for any multipart form. <br>
+To fuzz a form you must supply a configuration file that specifies the entries and methods used to create paramaters for that multipart form. <br>
 Available commands:
 
 For static parameters
